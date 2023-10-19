@@ -14,8 +14,11 @@ SetRelationshipBetweenGroups(0,
 5 = Hate  
 ]]
 
+-- edit the following template to your liking
 _, Bloods = AddRelationshipGroup("bloods")
 _, Crips = AddRelationshipGroup("crips")
+
+
 
 SetRelationshipBetweenGroups(0, Bloods, Bloods) -- set bloods to be companions with other bloods
 SetRelationshipBetweenGroups(5, Bloods, Crips) -- set bloods to hate crips
