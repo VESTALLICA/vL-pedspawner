@@ -19,4 +19,3 @@ can define multiple spawn points and models to a single ped for randomness.
 can place a qbtarget for events on the peds. 
 
 give a primary and secondary weapon with attachments and edit their combat behavior and general pathing.
-https://github.com/VESTALLICA/vL-pedspawner
