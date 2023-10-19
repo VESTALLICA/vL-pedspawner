@@ -9,11 +9,8 @@ resource also features a ped patrol route and relationship maker in the client f
 based off https://github.com/Lanzaned-Enterprises/LENT-PedSpawner
 
 support and dev discord: https://discord.gg/ktzjBM2MkZ
-?
 
 some features:
-
-dead guards can be looted via qbtarget and will delete after being looted. ped will also delete after a predefined time in the config if not looted.
 
 has templates for creating patrol routes and custom relationships for peds.
 
