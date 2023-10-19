@@ -173,7 +173,7 @@ end)
 
 CreateThread(function()
     while true do
-        Wait(5000)
+        Wait(Config.DeleteTime)
         if SpawnedPeds then
             for _, v in pairs(CreatedPeds) do
                 if IsEntityDead(v) then 
