@@ -4,7 +4,7 @@ https://streamable.com/r6qz8f
 
 the most advanced ped/npc spawner/placer in FiveM. 
 
-resource also features a ped patrol route and relationship maker in the client folder.
+resource also features a ped patrol route maker and relationship creator in the client folder.
 
 based off https://github.com/Lanzaned-Enterprises/LENT-PedSpawner
 
