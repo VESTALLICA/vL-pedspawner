@@ -3,10 +3,10 @@ game 'gta5'
 
 lua54 'yes'
 
-author 'MUDCRAB'
+author 'VESTA'
 description 'Ped Spawner Script'
 discord 'https://discord.gg/ktzjBM2MkZ'
-scriptname 'mc-pedspawner'
+scriptname 'vL-pedspawner'
 
 shared_script 'config.lua'
 client_script 'client/*.lua' 
