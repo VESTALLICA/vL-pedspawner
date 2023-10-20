@@ -33,6 +33,7 @@ CreateThread(function()
         
         SetPedCanLosePropsOnDamage(CreatedPeds[k], false, 0) -- will not lose helmet or glasses
         SetPedAllowedToDuck(CreatedPeds[k], true) -- can duck
+        FreezeEntityPosition(CreatedPeds[k], v["freeze"])
 
         SetPedRelationshipGroupHash(CreatedPeds[k], GetHashKey(v["relationship"]))
 
@@ -51,6 +52,7 @@ CreateThread(function()
             SetPedCanRagdoll(CreatedPeds[k], false)-- never ragdoll 
             SetPedCanRagdollFromPlayerImpact(CreatedPeds[k], false) -- cannot ragdoll on player impact
         end
+                
 
         -- combat --
         SetPedCombatMovement(CreatedPeds[k], v["movement"])
