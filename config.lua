@@ -13,6 +13,7 @@ Config.Peds = {
         ["playerdmg"] = true, -- true: ped can only be damaged by players. false: can be damaged by all sources.
         ["hostile"] = false, -- will auto attack player
         ["ragdoll"] = false, -- if true then ped will not ragdoll at all
+        ["freeze"] = false,  -- freeze entity position
 
         -- COMBAT & PATHING --
         ["range"] = 1, -- combat range. 0 = near, 1 = medium, 2 = far
