@@ -17,8 +17,8 @@ CreateThread(function()
         end
         
         
-        local a = math.random(1, #v["model"])  
-        local model = v["model"][a]
+ 
+        local model = v["model"][math.random(1, #v["model"])]
         model = type(model) == 'string' and joaat(model) or model
         RequestModel(model)
         
@@ -26,8 +26,7 @@ CreateThread(function()
             Wait(0)
         end
         
-        local b = math.random(1, #v["coords"])  
-        local coords = v["coords"][b]
+        local coords = v["coords"][math.random(1, #v["coords"]]
         
         CreatedPeds[k] = CreatePed(0, model, coords.x, coords.y, coords.z-1, coords.w, false, false) -- spawn ped and insert into CreatedPeds{} table
         
