@@ -12,7 +12,7 @@ Config.Peds = {
         ["relationship"] = "AMBIENT_GANG_BALLAS", -- or nil if none 
         ["playerdmg"] = true, -- true: ped can only be damaged by players. false: can be damaged by all sources.
         ["hostile"] = false, -- will auto attack player
-        ["ragdoll"] = false, -- if true then ped will not ragdoll at all
+        ["ragdoll"] = false, -- if true then ped will not ragdoll at all. does not work if entity position is frozen
         ["freeze"] = false,  -- freeze entity position
 
         -- COMBAT & PATHING --
