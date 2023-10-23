@@ -29,7 +29,7 @@ Config.Peds = {
         ["ladders"] = true, -- if ped can use ladders
         ["climb"] = true, -- if ped can climb and vault things
         ["drop"] = true, -- if ped can drop from heights
-        ["route"] = false ,-- if the ped has a patrol route it should follow. define routes in routes.lua.
+        ["route"] = false, -- if the ped has a patrol route it should follow. define routes in routes.lua.
 
 
         -- WEAPONS --
