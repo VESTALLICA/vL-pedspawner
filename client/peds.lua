@@ -29,12 +29,18 @@ CreateThread(function()
         local coords = v["coords"][math.random(1, #v["coords"]]
         
         CreatedPeds[k] = CreatePed(0, model, coords.x, coords.y, coords.z-1, coords.w, false, false) -- spawn ped and insert into CreatedPeds{} table
-        
+                
+        if v["freeze"] then
+            FreezeEntityPosition(CreatedPeds[k], true)
+        else
+            SetPedAllowedToDuck(CreatedPeds[k], true) -- can duck
+        end
+                
         SetPedCanLosePropsOnDamage(CreatedPeds[k], false, 0) -- will not lose helmet or glasses
-        SetPedAllowedToDuck(CreatedPeds[k], true) -- can duck
-        FreezeEntityPosition(CreatedPeds[k], v["freeze"])
-
-        SetPedRelationshipGroupHash(CreatedPeds[k], GetHashKey(v["relationship"]))
+                
+        if v["relationship"] then
+            SetPedRelationshipGroupHash(CreatedPeds[k], GetHashKey(v["relationship"]))
+        end
 
         if v["playerdmg"] then
             SetEntityOnlyDamagedByRelationshipGroup(CreatedPeds[k], true, 0x6F0783F5) -- can only be damaged by player
@@ -47,7 +53,7 @@ CreateThread(function()
             SetPedConfigFlag(CreatedPeds[k], 128, true) -- can be agitated
         end
         
-        if v["ragdoll"] then
+        if v["ragdoll"] and not v["freeze"] then
             SetPedCanRagdoll(CreatedPeds[k], false)-- never ragdoll 
             SetPedCanRagdollFromPlayerImpact(CreatedPeds[k], false) -- cannot ragdoll on player impact
         end
