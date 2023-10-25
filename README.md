@@ -17,5 +17,6 @@ has templates for creating patrol routes and custom relationships for peds.
 can define multiple spawn points and models to a single ped for randomness.
 
 can place a qbtarget for events on the peds. 
+(resource is standalone, just disable qbtargets)
 
 give a primary and secondary weapon with attachments and edit their combat behavior and general pathing.
