@@ -11,7 +11,7 @@ based off https://github.com/Lanzaned-Enterprises/LENT-PedSpawner
 more free resources/mlos and dev support in the vL discord: https://discord.gg/GC6tWQAK8u
 
 
-
+--
 some features:
 
 has templates for creating patrol routes and custom relationships for peds.
