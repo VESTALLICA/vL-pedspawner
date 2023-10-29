@@ -32,7 +32,7 @@ Config.Peds = {
         ["drop"] = true, -- if ped can drop from heights
         ["route"] = false, -- if the ped has a patrol route it should follow. define routes in routes.lua.
         
-        ["wander"] = false, -- route must be false. ped will instead wander around 
+        ["wander"] = false, -- route must be false. ped will instead wander around its spawnpoint
         ["radius"] = 0.0, -- wander in spawned area with radius of 100 meters. must end in decimal value.
         ["walk"] = 5, -- distance in meters that the ped will walk
         ["wait"] = 10.0, -- how long the ped will wait after walking X meters ^
