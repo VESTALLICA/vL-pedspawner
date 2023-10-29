@@ -35,7 +35,13 @@ CreateThread(function()
         else
             SetPedAllowedToDuck(CreatedPeds[k], true) -- can duck
         end
-                
+
+        if v["blind"] then
+            SetBlockingOfNonTemporaryEvents(CreatedPeds[k], true)
+        end
+
+          
+  
         SetPedCanLosePropsOnDamage(CreatedPeds[k], false, 0) -- will not lose helmet or glasses
                 
         if v["relationship"] then
@@ -168,9 +174,20 @@ CreateThread(function()
             })
         end
 
+        if not v["scenario"] and not v["route"] and not v["wander"] then
+            return
+        else
+            TaskStartScenarioInPlace(CreatedPeds[k], v["scenario"], -1, true)
+        end
+            
+
         -- ASSIGN ROUTE
-        if v["route"] then
+        if v["route"] and not v["wander"] then
             TaskPatrol(CreatedPeds[k], 'miss_'..k..'', 0, 1, 1)
+        end
+
+        if v["wander"] and not v["route"] then
+            TaskWanderInArea(CreatedPeds[k], v["coords"], v["radius"], v["walk"], v["wait"])
         end
     end
 
