@@ -177,7 +177,8 @@ CreateThread(function()
         if not v["scenario"] and not v["route"] and not v["wander"] then
             return
         else
-            TaskStartScenarioInPlace(CreatedPeds[k], v["scenario"], -1, true)
+            local scenario = v["scenario"][math.random(1, #v["scenario"]]
+            TaskStartScenarioInPlace(CreatedPeds[k], scenario, -1, true)
         end
             
 
