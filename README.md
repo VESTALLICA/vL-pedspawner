@@ -8,7 +8,9 @@ resource also features a ped patrol route maker and relationship creator in the 
 
 based off https://github.com/Lanzaned-Enterprises/LENT-PedSpawner
 
-more resources and support in the vL discord: https://discord.gg/GC6tWQAK8u
+more free resources/mlos and dev support in the vL discord: https://discord.gg/GC6tWQAK8u
+
+
 
 some features:
 
