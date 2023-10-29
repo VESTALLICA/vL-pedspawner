@@ -189,6 +189,18 @@ CreateThread(function()
         if v["wander"] and not v["route"] then
             TaskWanderInArea(CreatedPeds[k], v["coords"], v["radius"], v["walk"], v["wait"])
         end
+                
+        if v["blip"] then
+            local blip = AddBlipForEntity(CreatedPeds[k])
+            SetBlipColour(blip, v["color"])
+            SetBlipAlpha(blip, v["alpha"])
+            SetBlipSprite(blip, v["sprite"])
+            SetBlipScale(blip, v["scale"])
+            SetBlipAsShortRange(blip, true)
+            BeginTextCommandSetBlipName("STRING")
+            AddTextComponentString(v["text"])
+            EndTextCommandSetBlipName(blip)
+        end
     end
 
     SpawnedPeds = true
