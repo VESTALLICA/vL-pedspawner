@@ -54,14 +54,20 @@ Config.Peds = {
         ["p2"] = '', -- primary attachment 2
         ["s1"] = '', -- secondary attachment 1
         ["s2"] = '', -- secondary attachment 2
-
-
+        
+        
        -- HEALTH --
        ["health"] = 200, -- health. female models cannot exceed 100
        ["armor"] = 0, -- leave 0 if no armor. 
        ["immortal"] = false, -- cannot die
-
-
+        
+       ["blip"] = true, -- true or false. https://docs.fivem.net/docs/game-references/blips/ sprites + colors will place blip at ped coords
+       ["color"] =  43, -- color of blip
+       ["alpha"] = 255, -- transparency of blip. 0-255
+       ["sprite"] = 52, -- blip sprite 
+       ["scale"] = 0.75, -- blip size. must end in decimal value
+       ["text"] = '', -- blip text
+        
        -- QB TARGET ENTITY SUPPORT --
        ["target"] = false, 
        ["type"] = "client",
