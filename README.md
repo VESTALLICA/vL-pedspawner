@@ -23,3 +23,9 @@ can place a qbtarget for events on the peds.
 (resource is standalone, just disable qbtargets)
 
 give a primary and secondary weapon with attachments and edit their combat behavior and general pathing.
+
+10/28 update: 
+instead of defining a ped route, you can now opt to make the ped wander in a location instead. 
+can play a scenario on the peds and can make them not react to anything around them. 
+optional customizable blip for ped.
+please download the new version
