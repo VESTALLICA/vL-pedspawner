@@ -28,7 +28,7 @@ CreateThread(function()
         
         local coords = v["coords"][math.random(1, #v["coords"])]
         
-        CreatedPeds[k] = CreatePed(0, model, coords.x, coords.y, coords.z-1, coords.w, false, false) -- spawn ped and insert into CreatedPeds{} table
+        CreatedPeds[k] = CreatePed(0, model, coords.x, coords.y, coords.z-1, coords.w, true, false) -- spawn ped and insert into CreatedPeds{} table
                 
         if v["freeze"] then
             FreezeEntityPosition(CreatedPeds[k], true)
