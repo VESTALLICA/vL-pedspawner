@@ -26,7 +26,7 @@ CreateThread(function()
             Wait(0)
         end
         
-        local coords = v["coords"][math.random(1, #v["coords"]]
+        local coords = v["coords"][math.random(1, #v["coords"])]
         
         CreatedPeds[k] = CreatePed(0, model, coords.x, coords.y, coords.z-1, coords.w, false, false) -- spawn ped and insert into CreatedPeds{} table
                 
@@ -177,7 +177,7 @@ CreateThread(function()
         if not v["scenario"] and not v["route"] and not v["wander"] then
             return
         else
-            local scenario = v["scenario"][math.random(1, #v["scenario"]]
+            local scenario = v["scenario"][math.random(1, #v["scenario"])]
             TaskStartScenarioInPlace(CreatedPeds[k], scenario, -1, true)
         end
             
