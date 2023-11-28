@@ -16,7 +16,9 @@ more free resources/mlos and dev support in the VL discord: https://discord.gg/G
 a respawn system with a loot system + new export
 
 getVLPed client export to run code on any alive ped you spawned through this script in external resources
+
 dead peds will delete and respawn after their defined times. great for gang/hostile zones.
+
 define dead body loot that players can search for when a ped dies. you can define money or items that players can get based off the individual chance %
 
 new resources and updates you guys might also like soon
@@ -28,7 +30,7 @@ this resource will not work if you are not in the VL discord.
 some features:
 
 has templates for creating patrol routes and custom relationships for peds.
+
 can define multiple spawn points and models to a single ped for randomness.
-can place a qbtarget for events on the peds. 
-(resource is standalone, just disable qbtargets)
+
 give a primary and secondary weapon with attachments and edit their combat behavior and general pathing.
